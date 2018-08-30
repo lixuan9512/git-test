@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    :root {
+      font-size: calc(2vw + 1vh)
+    }
+
+    body {
+      font-size: 1rem
+    }
+  </style>
+</head>
+<body>
+
+<p>自适应字体大小</p>
+
+<script>
+
+  function CreatePerson(name, age, sex) {
+    return obj = {
+      name: name,
+      age: age,
+      sex: sex,
+      sayName: function () {
+        return this.name;
+      }
+    };
+  }
+
+  var p1 = new CreatePerson('longen', '28', '男');
+  var p2 = new CreatePerson('tugenhua', '27', '女');
+
+  console.log(p1.name);
+  console.log(p1.age);
+  console.log(p1.sex);
+
+  console.log(p2.name);
+  console.log(p2.age);
+  console.log(p2.sex);
+
+</script>
+</body>
+</html>
